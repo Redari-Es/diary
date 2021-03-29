@@ -27,3 +27,48 @@
 	font-size: 22px;
 	margin-left: 20px;
 }
+
+.column {
+	float: left;
+	padding: 18px;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: grid;
+}
+.sidemenu {
+	width: 20%;
+	position: sticky;
+}
+.content {
+	width: 75%;
+	background-repeat: no-repeat;
+}
+.sidemenu ul {
+	list-style-type: none;
+
+	margin: 0;
+	padding: 0;
+}
+.sidemenu li a {
+	margin-bottom: 12px;
+	display: grid;
+	padding: 14px;
+	margin: 18px;
+	background-color: #eee;
+	text-decoration: none;
+	text-justify: auto;
+	color: peru;
+	border: 1px solid;
+	border-radius: 6px;
+}
+.sidemenu li a:hover {
+	background-color: teal;
+	color: white;
+}
+
+.sidemenu li a.active {
+	background-color: #009cba;
+	color: white;
+}

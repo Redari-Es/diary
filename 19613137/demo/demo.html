@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- TODO: 用ｊｓ更改  <19-04-21, Redari-Es> -->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>19613137洪祥</title>
+		<style type="text/css" media="screen">
+			* {
+				box-sizing: border-box;
+				padding: 1px;
+				margin: 2px;
+			}
+			body {
+				background-color: bisque;
+			}
+			div {
+				box-sizing: border-box;
+				width: 92%;
+				height: 600px;
+				border: 2px solid;
+				padding: 4px;
+				margin: 40px;
+				float: left;
+				box-shadow: grey 4px 8px 8px 2px;
+			}
+			h1 {
+				text-align: center;
+				color: orangered;
+				padding: 1px;
+				margin: 1px;
+				box-sizing: border-box;
+				border: 2px solid;
+				border-radius: 6px 10px 12px 6px;
+				box-shadow: grey 4px 8px 8px 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>尝试用ｊｓ更改下选项</h1>
+		<div>
+			<h2>test</h2>
+			<p id="content">改变字体的颜色和大小</p>
+
+			<select name="some_name" id="changeColor" onchange="changeColor()">
+				<option value="red">red</option>
+				<option value="blue">blue</option>
+				<option value="green">green</option>
+				<option value="black">black</option>
+				<option value="yellow">yellow</option>
+				<option value="pink">pink</option>
+				<option value="purple">purple</option>
+			</select>
+			<input type="text" placeholder="请输入字体的大小" name="" id="changefontSize" />
+			<button onclick="changefontSize()">确认</button>
+			<br></br>显示结果：
+			<button onclick="shownow()">显示</button>
+			<br></br>
+			<hr>
+			<p>增加颜色：</p>
+			<input type="text" placeholder="请输入颜色的英文或数值:" value="" id="addColorValue"/>
+			<input type="text" placeholder="请输入颜色的中文:" value="" id="addColorText"/>
+			<button onclick="addcolor()">确认</button>
+			<br></br>
+			<hr>
+			<br></br>
+			<p id="showtime">时间</p>
+			<button onclick="showtime()">当前时间</button>
+			<br></br>
+			<hr>
+			<br></br>
+			<p>插入内容</p>
+			<p id="ccontent">这是当前的内容</p>
+			<input type="text" placeholder="请输入要加入的信息" value="" name="" id="addtext"/>
+			<button onclick="changetext()">更换</button>
+			<button onclick="addtext()">增加</button>
+
+			
+		</div>
+			
+		<script src="./demo.js"> charset="utf-8"</script>
+
+
+
+		</script>
+	</body>
+</html>
